@@ -2,7 +2,7 @@ namespace TaskTracker.Models
 {
 
     //Enum is a type of data, here it is defining the fixed possible states for a task.
-    public enum TaskStatus
+    public enum TaskItemStatus
     {
         Todo,
         InProgress,
@@ -27,8 +27,8 @@ namespace TaskTracker.Models
         }
 
         //Uses enum TaskStatus data type as variable  
-        private TaskStatus _status;
-        public TaskStatus Status
+        private TaskItemStatus _status;
+        public TaskItemStatus Status
         {
             get { return _status; }
             set { _status = value; }
